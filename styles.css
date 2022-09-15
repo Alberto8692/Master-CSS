@@ -36,6 +36,13 @@ a:hover {
 
 }
 
+.red {
+    color: red !important;
+}
+
+.blue {
+    color: blue !important;
+}
 a {
     color: #529125;
 
