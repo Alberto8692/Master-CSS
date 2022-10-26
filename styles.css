@@ -45,6 +45,9 @@ a {
 	color: #529125;
 }
 
+.orange {
+	color: orange !important;
+}
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -303,6 +306,7 @@ button:active {
 	font-weight: normal;
 	letter-spacing: 1px;
 	text-align: center;
+	margin-top: -20px;
 	padding-top: 20px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #ccc;
@@ -328,4 +332,15 @@ button:active {
 #sections .date {
 	color: gray;
 	font-size: 16px;
+}
+
+#sections .stickerOne,
+#sections .stickerTwo {
+	position: absolute;
+	margin-top: -18px;
+	z-index: 0;
+}
+
+#sections .stickerTwo {
+	margin-left: 860px;
 }
