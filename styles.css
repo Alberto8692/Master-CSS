@@ -10,6 +10,16 @@
 }
 
 @font-face {
+	font-family: "icons";
+	src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"),
+		url("fonts/websymbols-regular-webfont.eot");
+	src: url("fonts/websymbols-regular-webfont.eot?#iefix") format ("embedded-opentype");
+	src: url ("fonts/websymbols-regular-webfont.woff") format ("woff");
+	src: url ("fonts/websymbols-regular-webfont.ttf") format ("truetype");
+	font-weight: normal;
+	font-size: normal;
+}
+@font-face {
 	font-family: "fajala";
 	src: url("fonts/FjallaOne.ttf") format("truetype");
 	font-weight: normal;
@@ -47,6 +57,12 @@ a {
 
 .orange {
 	color: orange !important;
+}
+.icons {
+	font-family: "icons";
+	float: left;
+	margin-right: 5px;
+	margin-top: -1px;
 }
 input[type="text"],
 input[type="email"],
