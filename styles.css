@@ -1,29 +1,32 @@
 @font-face {
 	font-family: "nevis";
-	src: url("fonts/nevis.eot");
-	src: url("fonts/nevis.eot?#iefix") format ("embedded-opentype");
-	src: url ("fonts/nevis.woff") format ("woff");
-	src: url ("fonts/nevis.ttf") format ("truetype");
-	src: url ("fonts/nevis.svg;") format ("svg");
+	src: url("./css/fonts/nevis.svg");
+	src: url("./css/fonts/nevis.eot?#iefix") format("embedded-opentype");
+	src: url("./css/fonts/nevis.woff") format("woff"),
+		url("./css/fonts/nevis.ttf") format("truetype"),
+		url("./css/fonts/nevis.svg;") format("svg");
+	font-weight: normal;
+	font-size: normal;
+}
+
+@font-face {
+	font-family: "fajala";
+	src: url("./css/fonts/FjallaOne.ttf") format("truetype");
 	font-weight: normal;
 	font-size: normal;
 }
 
 @font-face {
 	font-family: "icons";
-	src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"),
-		url("fonts/websymbols-regular-webfont.eot");
-	src: url("fonts/websymbols-regular-webfont.eot?#iefix") format ("embedded-opentype");
-	src: url ("fonts/websymbols-regular-webfont.woff") format ("woff");
-	src: url ("fonts/websymbols-regular-webfont.ttf") format ("truetype");
+	src: url("./css/fonts/websymbols-regular-webfont.svg");
+	src: url("./css/fonts/websymbols-regular-webfont.eot?#iefix")
+			format("embedded-opentype"),
+		url("-/css/fonts/websymbols-regular-webfont.woff") format("woff"),
+		url("./css/fonts/websymbols-regular-webfont.ttf") format("truetype"),
+		url("./css/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular")
+			format("svg");
 	font-weight: normal;
-	font-size: normal;
-}
-@font-face {
-	font-family: "fajala";
-	src: url("fonts/FjallaOne.ttf") format("truetype");
-	font-weight: normal;
-	font-size: normal;
+	font-style: normal;
 }
 
 * {
@@ -58,12 +61,19 @@ a {
 .orange {
 	color: orange !important;
 }
+
 .icons {
-	font-family: "icons";
+	font-family: icons;
 	float: left;
 	margin-right: 5px;
 	margin-top: -1px;
 }
+
+.clearfix {
+	float: none;
+	clear: both;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -226,6 +236,7 @@ button:active {
 }
 
 #content {
+	font-family: sans-serif, Arial, Helvetica;
 	width: 1250px;
 	min-height: 1100;
 	margin: 0px auto;
@@ -233,7 +244,6 @@ button:active {
 
 #aside,
 #frase {
-	clear: both;
 	width: 200px;
 	float: left;
 	margin: 30px;
@@ -244,7 +254,7 @@ button:active {
 }
 
 #frase {
-	width: 180px;
+	width: 180px !important;
 	padding: 10px;
 	font-size: 14px;
 	font-family: sans-serif;
@@ -262,7 +272,7 @@ button:active {
 	width: 180px;
 	margin: 5px auto;
 	padding: 8px;
-	padding-left: 10px;
+	padding-left: 1px;
 	padding-right: 10px;
 	font-size: 14px;
 	border-bottom: 1px dashed #333333;
@@ -359,4 +369,27 @@ button:active {
 
 #sections .stickerTwo {
 	margin-left: 860px;
+}
+
+#history {
+	margin-right: 20px;
+	float: right;
+	margin-top: 20px;
+	font-family: sans-serif, Arial, Helvetica;
+}
+
+/*pie de pagina*/
+
+#footer {
+	width: 100%;
+	margin: 0px auto;
+	text-align: center;
+	margin-top: 40px;
+	background-color: #333333;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+	font-family: sans-serif;
+	font-size: 14px;
+	box-shadow: 0px 0px 2px gray;
 }
